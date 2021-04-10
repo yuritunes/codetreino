@@ -8,9 +8,9 @@ public class FuncionarioOperacional extends Funcionario implements Gratificacao,
 		super();
 	}
 	
-	public FuncionarioOperacional(long cadastro, String nome, String ocupacao, double salario, String setor) {
+	public FuncionarioOperacional(long cadastro, String nome, String ocupacao, double Salario, String setor) {
 		
-		super(cadastro, nome, ocupacao, salario);
+		super(cadastro, nome, ocupacao, Salario);
 		
 		this.setor = setor;
 	}
@@ -47,12 +47,12 @@ public class FuncionarioOperacional extends Funcionario implements Gratificacao,
 	@Override
 	public double valeAlimentacao() {
 		
-		return this.getSalario() *0.05;
+		return this.getSalario() * 0.05;
 	}
 
 	@Override
 	public double valeTransporte() {
 		
-		return this.getSalario() *0.06;
+		return this.getSalario() * 0.06;
 	}
 }

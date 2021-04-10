@@ -5,19 +5,19 @@ public abstract class Funcionario {
 	private long cadastro;
 	private String nome;
 	private String ocupacao;
-	private double salario;
+	private double Salario;
 	private static int numFuncionarios;
 	
 	public Funcionario() {
 		this.numFuncionarios++;
 	}
 	
-	public Funcionario(long cadastro, String nome, String ocupacao, double salario) {
+	public Funcionario(long cadastro, String nome, String ocupacao, double Salario) {
 		
 		this.cadastro = cadastro;
 		this.nome = nome;
 		this.ocupacao = ocupacao;
-		this.salario = salario;
+		this.Salario = Salario;
 		this.numFuncionarios++;
 		
 		
@@ -50,11 +50,11 @@ public abstract class Funcionario {
 	}
 
 	public double getSalario() {
-		return salario;
+		return Salario;
 	}
 
-	public void setSalario(double salario) {
-		this.salario = salario;
+	public void setSalario(double Salario) {
+		this.Salario = Salario;
 	}
 	
 	public static void verFuncionarios() {
